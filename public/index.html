@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="outer-container">
+    <div class="sub-container">
+        <form>
+            <p id="errorMessage" class="errorMessage" ></p>
+            <div class="inner-container">
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div  class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div  class="form-element">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div>
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="sub-container">
+        <p>Email: <span id="email-output"></span></p>
+        <p>Name: <span id="name-output"></span></p>
+        <p>Surname: <span id="surname-output"></span></p>
+        <p>Birthday: <span id="birthday-output"></span></p>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js" type="module"></script>
+
+</body>
+</html>
